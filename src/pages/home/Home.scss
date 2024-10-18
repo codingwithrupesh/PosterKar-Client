@@ -1,0 +1,29 @@
+.Home{
+    .collection{
+        margin-top: 60px;
+         flex-basis: 100%;
+        .heading{
+            font-size: 2rem;
+            color: rgb(130, 29, 224);
+        }
+
+        .info{
+
+            .subheading{
+                margin-top: 10px;
+            }
+        }
+
+        .content{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            gap:40px;
+            margin-top:20px;
+            // flex-basis: 100%;
+            
+        }
+
+    }
+}

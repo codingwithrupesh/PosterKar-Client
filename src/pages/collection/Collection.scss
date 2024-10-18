@@ -1,0 +1,109 @@
+.Categories {
+  display: flex;
+//   flex-wrap: wrap;
+  flex-direction: column;
+  gap: 30px;
+  .categoriesTop {
+    // border: 1px solid gray;
+    display: flex;
+    // gap: 100px;
+    margin-top: 20px;
+    // margin-bottom: 60px;
+    // height: 30vh;
+    // flex-wrap: wrap;
+    // position: relative;
+    .categoriesTopleft {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      
+
+      .categorisTitle {
+        padding-top: 10px;
+      }
+    }
+    .CategoriesTopRight {
+      flex: 1;
+      // border: 1px solid gray;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      justify-content: center;
+    //   align-items: end;
+    align-items: center;
+
+      .sort {
+        // margin-bottom: 10px;
+
+        .sortHeading {
+          font-size: 1.4rem;
+          padding: 5px;
+        }
+        .sortCheckBox {
+          padding: 5px;
+
+          select {
+            padding: 6px;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .categoriesBottom {
+    // border: 1px solid grey;
+    display: flex;
+    // flex-wrap: wrap;
+    // flex-direction: column;
+    .categoriesBottomLeft {
+      flex: 0.6;
+      // border: 1px solid grey;
+
+      display: flex;
+      justify-content: center;
+      // align-items: center;
+      .categoriesFilterBox {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 50px;
+        h3 {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .categoriesBottomRight {
+      flex: 3;
+      // border: 1px solid grey;
+      
+
+      .categoriesProduct {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .Categories{
+        width: 100%;
+        flex-direction: column;
+        .categoriesTop{
+            flex-direction: column;
+            gap: 20px;
+        }
+        .categoriesBottom{
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+    
+}
